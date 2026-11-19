@@ -1,0 +1,101 @@
+Strudel runtime for Steer Compose, built by macos/tools/build_strudel.sh
+Licence: AGPL-3.0-or-later (Strudel contributors, https://codeberg.org/uzu/strudel)
+scene.js (the Scene layer): three.js 0.186.1 MIT (https://github.com/mrdoob/three.js); the scenes themselves are Steer's own (tools/strudel/scene3d.mjs)
+Packages:
+  @babel/runtime 7.29.14 MIT
+  @kabelsalat/core 0.4.0 AGPL-3.0-or-later
+  @kabelsalat/lib 0.4.1 AGPL-3.0-or-later
+  @kabelsalat/web 0.4.1 AGPL-3.0-or-later
+  @strudel/core 1.2.6 AGPL-3.0-or-later
+  @strudel/draw 1.2.6 AGPL-3.0-or-later
+  @strudel/mini 1.2.6 AGPL-3.0-or-later
+  @strudel/tonal 1.2.6 AGPL-3.0-or-later
+  @strudel/transpiler 1.2.6 AGPL-3.0-or-later
+  @strudel/webaudio 1.3.0 AGPL-3.0-or-later
+  @tonaljs/abc-notation 4.9.4 MIT
+  @tonaljs/array 4.8.6 MIT
+  @tonaljs/chord 4.10.2 MIT
+  @tonaljs/chord-detect 4.9.4 MIT
+  @tonaljs/chord-detect/node_modules/@tonaljs/chord-type 5.2.2 MIT
+  @tonaljs/chord-type 4.8.2 MIT
+  @tonaljs/collection 4.9.1 MIT
+  @tonaljs/core 4.10.4 MIT
+  @tonaljs/core/node_modules/@tonaljs/pitch-distance 5.0.2 MIT
+  @tonaljs/core/node_modules/@tonaljs/pitch-note 5.0.3 MIT
+  @tonaljs/duration-value 4.9.1 MIT
+  @tonaljs/interval 4.8.2 MIT
+  @tonaljs/key 4.11.5 MIT
+  @tonaljs/midi 4.10.5 MIT
+  @tonaljs/mode 4.9.5 MIT
+  @tonaljs/mode/node_modules/@tonaljs/interval 5.1.2 MIT
+  @tonaljs/mode/node_modules/@tonaljs/pitch 5.0.3 MIT
+  @tonaljs/mode/node_modules/@tonaljs/pitch-interval 6.2.0 MIT
+  @tonaljs/note 4.12.4 MIT
+  @tonaljs/note/node_modules/@tonaljs/pitch 5.0.3 MIT
+  @tonaljs/note/node_modules/@tonaljs/pitch-interval 6.2.0 MIT
+  @tonaljs/pcset 4.10.4 MIT
+  @tonaljs/pcset/node_modules/@tonaljs/pitch 5.0.3 MIT
+  @tonaljs/pcset/node_modules/@tonaljs/pitch-interval 6.2.0 MIT
+  @tonaljs/pitch 5.0.1 MIT
+  @tonaljs/pitch-distance 5.1.0 MIT
+  @tonaljs/pitch-distance/node_modules/@tonaljs/pitch 5.0.3 MIT
+  @tonaljs/pitch-distance/node_modules/@tonaljs/pitch-interval 6.2.0 MIT
+  @tonaljs/pitch-interval 5.0.2 MIT
+  @tonaljs/pitch-note 6.1.2 MIT
+  @tonaljs/pitch-note/node_modules/@tonaljs/pitch 5.0.3 MIT
+  @tonaljs/progression 4.10.0 MIT
+  @tonaljs/progression/node_modules/@tonaljs/chord 6.2.2 MIT
+  @tonaljs/progression/node_modules/@tonaljs/chord-type 5.2.2 MIT
+  @tonaljs/progression/node_modules/@tonaljs/interval 5.1.2 MIT
+  @tonaljs/progression/node_modules/@tonaljs/pitch 5.0.3 MIT
+  @tonaljs/progression/node_modules/@tonaljs/pitch-interval 6.2.0 MIT
+  @tonaljs/range 4.9.5 MIT
+  @tonaljs/roman-numeral 4.9.4 MIT
+  @tonaljs/roman-numeral/node_modules/@tonaljs/pitch 5.0.3 MIT
+  @tonaljs/roman-numeral/node_modules/@tonaljs/pitch-interval 6.2.0 MIT
+  @tonaljs/scale 4.13.7 MIT
+  @tonaljs/scale-type 4.9.5 MIT
+  @tonaljs/scale/node_modules/@tonaljs/chord-type 5.2.2 MIT
+  @tonaljs/time-signature 4.10.1 MIT
+  @tonaljs/tonal 4.10.0 MIT
+  @types/estree 1.0.10 MIT
+  acorn 8.19.0 MIT
+  chord-voicings 0.0.1 ISC
+  djipevents 2.0.7 Apache-2.0
+  escodegen 2.1.0 BSD-2-Clause
+  esprima 4.0.1 BSD-2-Clause
+  estraverse 5.3.0 BSD-2-Clause
+  estree-walker 3.0.3 MIT
+  esutils 2.0.3 BSD-2-Clause
+  fraction.js 5.3.4 MIT
+  jazz-midi 1.7.9 MIT
+  jzz 1.9.6 MIT
+  nanostores 0.11.4 MIT
+  source-map 0.6.1 BSD-3-Clause
+  superdough 1.3.0 AGPL-3.0-or-later
+  supradough 1.2.4 AGPL-3.0-or-later
+  three 0.186.1 MIT
+  webmidi 3.3.1 Apache-2.0
+
+three.js licence (scene.js):
+The MIT License
+
+Copyright © 2010-2026 three.js authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

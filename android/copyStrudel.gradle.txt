@@ -1,0 +1,20 @@
+// android/app/build.gradle (Steer for Android 1.17.0), the task that copies the Strudel runtime into the APK's
+// assets/strudel/ and applies the palette patch (steer_palette.py does the same outside Gradle):
+// the Music screen's Strudel runtime: the Mac's bundled files as they are (macos/Resources/strudel, built by
+// macos/tools/build_strudel.sh from pinned @strudel/* + superdough; AGPL-3.0-or-later, NOTICE.txt), one copy in git
+tasks.register("copyStrudel", Copy) {
+    from("../../macos/Resources/strudel") { include "scene.js", "index.html", "NOTICE.txt" }   // scene.js: the visuals' Three.js scenes (MIT)
+    // the redesign's palette, "steer" (mint, gold and Steer's greens on the green-black stage), added to the page's
+    // palette table on the way in; the phone's own look starts on it (VizPlan.branded). The build fails if the table moved.
+    from("../../macos/Resources/strudel") {
+        include "strudel.js"
+        filter { String line ->
+            line.contains('deepsea:["#0FA3B1"') ? line.replace('deepsea:["#0FA3B1"', 'steer:["#7FD9C2","#E7A93A","#4FB89E","#ACEDDC","#F1F0F0","#1C9AA2"],deepsea:["#0FA3B1"') : line
+        }
+    }
+    into modelAssets.map { it.dir("strudel") }
+    doLast {
+        def js = modelAssets.get().file("strudel/strudel.js").asFile
+        if (!js.text.contains('steer:["#7FD9C2"')) throw new GradleException("strudel.js: the palette table moved; the steer palette was not added")
+    }
+}

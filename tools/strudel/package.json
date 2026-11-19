@@ -1,0 +1,19 @@
+{
+  "name": "steer-strudel-bundle",
+  "private": true,
+  "description": "Strudel (AGPL-3.0-or-later) bundled offline for Steer's Compose tab: tools/build_strudel.sh",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@strudel/core": "1.2.6",
+    "@strudel/draw": "1.2.6",
+    "@strudel/mini": "1.2.6",
+    "@strudel/tonal": "1.2.6",
+    "@strudel/transpiler": "1.2.6",
+    "@strudel/webaudio": "1.3.0",
+    "superdough": "1.3.0",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  }
+}
